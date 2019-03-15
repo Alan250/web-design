@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: rgba(0, 100, 0, 1);
+}
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+  max-width: 1070px;
+  width: 100%;
+  padding: 10px 20px 0px 10px;
+}
+.svgIcon-use {
+  fill: #fff;
+}
+.home-icon{
+	display: flex;
+}
+.home-icon::after {
+  content: "";
+  margin-top: 8px;
+  height: 28px;
+  margin-left: 15px;
+  border-right: 1px solid rgba(255,255,255,.2);
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.freecodecamp-img {
+  margin-top: 3px;
+  margin-left: 21px;
+}
+.following {
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #B5DDA8;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+  color: rgba(0, 100, 0, 1);
+}
+@media (max-width: 700px){
+    .following {
+        display: none;
+    }
+}
+.check-mark{
+  fill: rgba(0, 100, 0, 1);
+}
+.icon-use{
+  margin-left: auto;
+  display: flex;
+  padding-right: 10px;
+}
+.icon-element {
+  padding: 0px;
+  background-color: rgba(0, 100, 0, 1);
+  border-radius: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.avatar-image {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+.menu2{
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-top: 10px;
+	flex-basis: 100%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.element {
+  text-decoration: none;
+  color: white;
+}
+.element::after{
+  content: "";
+  margin-top: 8px;
+  height: 30px;
+  margin-left: 15px;
+  border-right: 2px solid rgba(255,255,255,.2);
+}
+.line {
+  height: 20px;
+  margin-left: 19px;
+  border-right: 1px solid white;
+}
+.hov-element {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #B5DDA8;
+}
+.hov-element:hover {
+  color: white;
+}
+.main {
+  margin: auto;
+}
+.introduction {
+  padding-top: 30px;
+  margin: 0 auto;
+  display: block;
+  max-width: 750px;
+  width: 100%;
+}
+.title{
+  font-size: 45px;
+  font-weight: 400;
+}
+h1 {
+  margin: 0;
+}
+.avatar-image-autor{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.autor{
+  margin-top: 25px;
+  display: flex;
+}
+.info-autor{
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.name-autor{
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.name-autor:hover{
+  text-decoration: underline;
+}
+.follow {
+  border: 1px solid rgba(0, 100, 0, 1);
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 0 10px;
+  margin: 0 10px;
+  color: rgba(0, 100, 0, 1);
+}
+@media (max-width: 550px){
+  .follow {
+    display: none;
+  }
+}
+@media (max-width: 580px){
+  .icon-use {
+    display: none;
+  }
+}
+.time > span {
+  margin-top: 0;
+  color: gray;
+  font-size: 15px;
+}
+.time {
+  margin-top: 5px;
+}
+.retreat {
+  margin-left: 7px;
+}
+.photo-title{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 560px;
+  height: 100%;
+}
+.photo-size {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.apit {
+  width: 180px;
+  color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.apit > a {
+  text-decoration: none;
+  color: #3E8432;
+}
+.size-nav {
+  display: block;
+}
+.text-position {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  width: 100%;
+  max-width: 700px;
+}
+.text-position > p {
+  margin-bottom: 0;
+  margin-top: 38px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.58;
+  font-style: normal;
+  color: #595959;
+}
+.background-color {
+  background-color: rgba(0,0,0,.05);
+  font-size: 17px;
+}
+.blockquote {
+  color: gray;
+  margin-top: 55px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1.48;
+}
+.blockquote > a {
+  color: gray;
+}
+.img-css {
+  margin-top: 35px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%
+}
+.img {
+  margin: 0;
+}
+.block {
+  display: block;
+}
+.apit-plus {
+  width: 235px;
+  color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.title-b {
+  margin-top: 40px !important;
+  font-size: 30px !important;
+  color: black !important;
+}
+.color-a {
+  color: gray;
+}
+.pre-setting {
+  margin-top: 40px;
+  background-color: rgba(0,0,0,.05);
+  color: gray;
+  font-size: 18px;
+  padding: 15px;
+}
+.blockquote-line{
+  color: #595959;
+  font-size: 21px;
+  margin-top: 38px;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
