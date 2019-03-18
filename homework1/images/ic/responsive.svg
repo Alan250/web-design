@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g fill="none" fill-rule="evenodd">
+    <polyline fill="#FFDF7B" points="44 14 50 14 50 43 23 43"/>
+    <polyline fill="#FFDF7B" points="12 43 6 43 6 14 27 14"/>
+    <path fill="#2E9FFF" d="M43,28 L28,28 C27.448,28 27,27.552 27,27 L27,9 C27,8.448 27.448,8 28,8 L43,8 C43.552,8 44,8.448 44,9 L44,27 C44,27.552 43.552,28 43,28 Z"/>
+    <path fill="#D5F7D9" d="M22,50 L13,50 C12.448,50 12,49.552 12,49 L12,35 C12,34.448 12.448,34 13,34 L22,34 C22.552,34 23,34.448 23,35 L23,49 C23,49.552 22.552,50 22,50 Z"/>
+    <polyline stroke="#111" stroke-linecap="square" stroke-width="2" points="39 9 45 9 45 38 18 38"/>
+    <polyline stroke="#111" stroke-linecap="square" stroke-width="2" points="7 38 1 38 1 9 22 9"/>
+    <path stroke="#111" stroke-linecap="square" stroke-width="2" d="M38 23L23 23C22.448 23 22 22.552 22 22L22 4C22 3.448 22.448 3 23 3L38 3C38.552 3 39 3.448 39 4L39 22C39 22.552 38.552 23 38 23zM17 45L8 45C7.448 45 7 44.552 7 44L7 30C7 29.448 7.448 29 8 29L17 29C17.552 29 18 29.448 18 30L18 44C18 44.552 17.552 45 17 45zM22 43L28 43M12 40L13 40M29 18L32 18"/>
+  </g>
+</svg>

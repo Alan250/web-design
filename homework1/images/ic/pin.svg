@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#FFF" stroke-width="2" d="M33.5 38L33.5 44M38 49.5L43 49.5M51 52L59 61M58 64.5L53 64.5"/>
+    <circle cx="33.5" cy="33.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="48.5" cy="33.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="62.5" cy="33.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="33.5" cy="49.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="48.5" cy="49.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="62.5" cy="49.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="33.5" cy="64.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="48.5" cy="64.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+    <circle cx="62.5" cy="64.5" r="4.5" stroke="#FFF" stroke-linecap="square" stroke-width="2"/>
+  </g>
+</svg>
