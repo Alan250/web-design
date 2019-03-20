@@ -7,7 +7,7 @@ body
 .header 
     position: relative
     overflow: hidden
-    padding-bottom: 150px
+    padding-bottom: 170px
     
     &::before
         content: ''
@@ -156,8 +156,45 @@ body
         display: none
 
     .header 
-        padding-bottom: 300px
+        padding-bottom: 200px
     
     .header::before 
         top: -700px
         transform: translateX(900px) rotate(148deg)
+
+.one
+    display: flex
+    flex-direction: column
+    max-width: 1105px
+    width: 100%
+    margin: auto
+    text-align: center
+
+    &__header
+        max-width: 836px
+        width: 100%
+        margin: auto
+
+        &-h3
+            font-size: 34px
+            font-weight: 700
+            line-height: 41px
+            text-align: center
+            margin: 0
+
+        &-p 
+            margin: auto
+            margin-top: 23px
+            color: #7e8085
+            font-size: 18px
+            font-weight: 600
+            line-height: 34px
+            text-align: center
+
+    &__tols
+        display: flex
+        max-width: 920px
+        width: 100%
+        margin: auto
+        margin-top: 75px
+        justify-content: space-between
