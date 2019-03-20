@@ -15,9 +15,9 @@ body
         width: 1500px
         height: 1000px
         background-color: #f6f8f9
-        transform: rotate(148deg)
+        transform: translateX(600px) rotate(148deg) 
         top: -542px
-        left: -170px
+        right: 50%
         border-top-right-radius: 160px
         z-index: -2
     
@@ -27,22 +27,12 @@ body
         background-color: #2f5bea
         width: 1100px
         height: 1100px
-        top: -550px
-        right: -745px
-        transform: rotate(-49deg)
+        transform: translateX(400px) rotate(-49deg)
+        top: -590px
+        left: 50%
         border-top-left-radius: 6%
         z-index: -1
-    
-    &__logo--mobile 
-        text-align: center
-        margin-top: 20px
-        margin-left: 20px
-        width: 130px
-        display: none
-
-    &__nav--mobile
-        display: block
-
+ 
     &__nav 
         max-width: 1105px
         width: 100%
@@ -129,14 +119,17 @@ body
         position: absolute
 
 @media (max-width: 1050px)
-    header:after
+    header::after
+        display: none
+    
+    .header__video--preview
         display: none
 
-@media (max-width: 700px)
     .header__content
         justify-content: center
-        margin-top: 50px
+        margin-top: 30px
     
+@media (max-width: 700px)
     .header__h1 
         text-align: center
         max-width: 400px
@@ -148,11 +141,12 @@ body
     .header__bth
         margin: auto
 
-    .header__video--preview
+    .header__nav 
         display: none
 
-    .header__nav
-        display: none
-
-    .header__logo--mobile
-        display: block
+    .header 
+        padding-bottom: 300px
+    
+    .header::before 
+        top: -700px
+        transform: translateX(900px) rotate(148deg)
