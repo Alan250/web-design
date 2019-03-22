@@ -39,22 +39,21 @@ body
         margin: auto
         margin-top: 35px
         display: flex
+        align-items: center
         text-align: center
 
+    &__nav a:first-child 
+        display: inline-flex
+
     &__nav a 
-        height: 31px
         color: #7e8085
         text-decoration: none
         font-size: 17px
     
-    &__nav a + a:not(:last-child)
-        margin-top: 5px
-        height: 20px
+    &__nav a + a
         margin-left: 45px
 
     &__nav a + a:last-child
-        margin-top: 5px
-        height: 20px
         margin-left: 20px
 
     &__nav a:hover 
@@ -65,10 +64,9 @@ body
         justify-content: space-between
         display: flex
         margin: auto
-        margin-top: 115px
         max-width: 1100px
         width: 100%
-        height: 445px
+        min-height: 700px
         align-items: center
 
     &__title
@@ -110,6 +108,7 @@ body
         font-weight: 700
 
     &__video-preview
+        height: 445px
         display: block
         box-shadow: 0 0 30px rgba(0,0,0,.2)
         position: relative
@@ -117,7 +116,7 @@ body
         overflow: hidden
         cursor: pointer
     
-    &__video-preview::before
+    &__video-preview-play
         background: url(../images/ic/play.svg) no-repeat center center
         content: ""
         position: absolute
@@ -127,13 +126,13 @@ body
         border-radius: 50%          
         top: 50%
         left: 50%
-        transform: translate(-60px, -60px)
+        transform: translate(-50%, -50%)
+@media (max-width: 990px)
+     .header__video-preview
+        display: none
 
 @media (max-width: 1050px)
     header::after
-        display: none
-    
-    .header__video-preview
         display: none
 
     .header__content
@@ -144,7 +143,7 @@ body
     .header__h1 
         text-align: center
         max-width: 400px
-    
+
     .header__p 
         max-width: 400px
         text-align: center
@@ -162,7 +161,7 @@ body
         top: -700px
         transform: translateX(900px) rotate(148deg)
 
-.one
+.classic
     display: flex
     flex-direction: column
     max-width: 1105px
@@ -198,11 +197,22 @@ body
         margin: auto
         margin-top: 75px
         justify-content: space-between
+        box-shadow: 0 3px 0 #e6e9ed
 
         &-icon
+            max-width: 220px
+            width: 100%
             align-items: center
             display: flex
             flex-direction: column
+            padding-bottom: 26px
+            transition: box-shadow .5s
+
+            &:hover
+                box-shadow: 0 3px 0 #2c61e2
+
+            &-active
+                box-shadow: 0 3px 0 #2c61e2
 
         &-icon > h5
             margin-top: 12px
@@ -215,3 +225,74 @@ body
         &-icon > img 
             height: 50px
             width: 50px
+
+    &__final 
+        display: flex
+        align-items: center
+        min-height: 620px
+        text-align: left
+        justify-content: space-between
+        padding-bottom: 80px
+
+        &-img 
+            display: block
+            position: relative
+
+        &-img::before 
+            content: ''
+            position: absolute
+            z-index: -1
+            background: url(../images/il/dot-grid-3.svg) no-repeat
+            width: 158px
+            height: 153px
+            left: 50%
+            transform: translateX(-305px)
+            top: -16px
+
+        &-img::after
+            content: ''
+            position: absolute
+            z-index: -1
+            background: url(../images/il/triangle.svg) no-repeat
+            width: 45px
+            height: 43px
+            left: 50%
+            top: 470px 
+            transform: translateX(120px)
+
+        &-text
+            margin-left: 40px
+        
+            &-h4
+                margin-top: 45px
+                height: 41px
+                font-size: 28px
+                font-weight: 700
+                line-height: 41px
+                margin-bottom: 0
+
+            &-ul
+                list-style-image: url(../images/ul-dot.png)
+                margin-top: 35px
+                padding-left: 20px
+
+                & li 
+                    padding-left: 10px
+                    font-size: 16px
+                    line-height: 28px
+                    color: #54565a
+
+            &-blockquote
+                    margin-right: 22px
+                    margin-top: 32px
+                    padding-top: 25px
+                    color: #54565a
+                    font-family: Noto Serif
+                    font-size: 18px
+                    line-height: 30px
+                    border-top: 1px solid #e6e9ed
+                    margin-left: 0
+            
+@media (max-width: 1000px)
+    .classic__final-img
+        display: none
