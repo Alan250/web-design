@@ -7,7 +7,6 @@ body
 .header 
     position: relative
     overflow: hidden
-    padding-bottom: 170px
     
     &::before
         content: ''
@@ -154,9 +153,6 @@ body
     .header__nav 
         display: none
 
-    .header 
-        padding-bottom: 200px
-    
     .header::before 
         top: -700px
         transform: translateX(900px) rotate(148deg)
@@ -164,22 +160,22 @@ body
 .classic
     display: flex
     flex-direction: column
-    max-width: 1105px
+    max-width: 1305px
     width: 100%
     margin: auto
-    text-align: center
-
+    justify-content: center
+        
     &__header
         max-width: 836px
-        width: 100%
-        margin: auto
+        width: 100% 
+        margin: 0 auto
 
         &-h3
             font-size: 34px
             font-weight: 700
             line-height: 41px
-            text-align: center
             margin: 0
+            text-align: center
 
         &-p 
             margin: auto
@@ -194,10 +190,9 @@ body
         display: flex
         max-width: 920px
         width: 100%
-        margin: auto
         margin-top: 75px
         justify-content: space-between
-        box-shadow: 0 3px 0 #e6e9ed
+        margin: 50px auto 0
 
         &-icon
             max-width: 220px
@@ -222,20 +217,66 @@ body
             text-align: center
             margin-bottom: 0
 
-        &-icon > img 
-            height: 50px
-            width: 50px
+        &-icon-one
+            display: flex
+
+            &::after
+                content: ''
+                background: url(../images/ic/arrow.svg) no-repeat
+                background-size: cover
+                width: 30px
+                height: 92px
+                margin-top: 55px
+                margin-left: 5px
+
+            &:last-child::after
+                display: none
+
+        &-icon-set
+            display: flex
+            flex-direction: column
+            align-items: center
+            max-width: 275px
+            width: 100%
+
+            &-img
+                border: 4px dotted #c6cbd7
+                padding: 5px
+                width: 100px
+                height: 100px
+                border-radius: 50%
+
+            &-img::before
+                width: 100%
+                height: 100%
+                display: block
+                border-radius: 50%
+
+        &-icon-set > h5
+            font-size: 21px
+            font-weight: 700
+            line-height: 25px
+            text-align: center
+            margin-top: 25px
+            margin-bottom: 0
+
+        &-icon-set > p
+            margin-top: 10px
+            color: #7e8085
+            font-size: 16px
+            line-height: 28px
+            text-align: center
 
     &__final 
         display: flex
         align-items: center
         min-height: 620px
-        text-align: left
-        justify-content: space-between
+        max-width: 1105px
+        width: 100%
+        margin: auto
         padding-bottom: 80px
 
         &-img 
-            display: block
             position: relative
 
         &-img::before 
@@ -296,3 +337,50 @@ body
 @media (max-width: 1000px)
     .classic__final-img
         display: none
+
+    .classic__tols-icon-one::after
+        display: none
+
+.gray
+    background-color: #f6f8f9
+
+.size
+    padding: 110px 0
+
+.shadow
+    box-shadow: 0 3px 0 #e6e9ed
+
+.img 
+    display: block
+
+.img1::before
+    content: ''
+    background: url(../images/ic/pin.svg) no-repeat 50%
+    background-color: #545f75
+
+.img2::before
+    content: ''
+    background: url(../images/ic/layout.svg) no-repeat 50%
+    background-color: #545f75
+
+.img3::before
+    content: ''
+    background: url(../images/ic/spaceships.svg) no-repeat 50%
+    background-color: #545f75
+
+@media (max-width: 375px)
+    .classic__tols 
+        display: block
+
+    .classic__tols-icon-one
+        justify-content: center
+
+@media (max-width: 320px)
+    .classic__tols-icon
+        margin: auto
+        margin-top: 20px
+
+.bord-bot
+    padding-bottom: 120px
+    border-bottom: 1px solid #e8ebef
+        
