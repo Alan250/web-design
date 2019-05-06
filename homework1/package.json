@@ -4,7 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "tar": ">=4.4.2",
     "gulp": "^4.0.0"
   },
   "devDependencies": {
